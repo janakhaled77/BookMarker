@@ -1,0 +1,85 @@
+body{
+    background-color: antiquewhite;
+}
+.headers{
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  width: fit-content;
+  position: relative;
+  }
+  .headers::before{
+  position: absolute;
+  content: "";
+  bottom: 0;
+  height: 30%;
+  width: 100%;
+  z-index: -1;
+  background-color: #fec260;
+  transition: all 0.3s ease ;
+}
+.headers:hover::before{
+  height: 60%;
+}
+.font{
+    
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+      
+}
+.inner{
+    background: linear-gradient(to right,rgb(60, 165, 92),rgb(230, 218, 85));
+    padding: 20px;
+    color: black;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+hr {
+    border-top: 2px dotted rgb(0, 0, 0);
+  }
+  
+/* .input:focus{
+border-color: #ff9800; 
+box-shadow: 1px 2px 10px rgba(255, 152, 0, 0.5); 
+
+} */
+.hover-effect {
+  display: inline-block;
+  position: relative;
+  color: black; 
+  padding: 5px 0; 
+
+}
+
+.hover-effect::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(193, 135, 34, 0.592); 
+  height: 50%; 
+  width: 100%; 
+  transition: height 0.3s ease-in-out;
+  z-index: -1;
+}
+
+.hover-effect:hover::before {
+  height: 100%; 
+}
+
+.hover-effect span {
+  position: relative;
+  z-index: 1; 
+}
+
+h1 {
+  display: inline-block; 
+  margin: 0; }
+
+
+
+   
+  
